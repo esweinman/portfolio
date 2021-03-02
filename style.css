@@ -1,4 +1,4 @@
-/*  import google fonts */
+/*  Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
+/* Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -26,7 +26,7 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
+/* Similar Styling */
 section{
     padding: 100px 0;
 }
@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .work, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
-.services .serv-content,
+.work .work-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -75,7 +75,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* Navbar */
 .navbar{
     position: fixed;
     width: 100%;
@@ -124,7 +124,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/* Menu Button */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -160,7 +160,7 @@ section .title::after{
 }
 
   
-/* home section styling */
+/* Home */
 .home{
     display: flex;
     background: url("img/banner.jpg") no-repeat center;
@@ -199,7 +199,7 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
+/* About */
 .about .title::after{
     content: "who i am";
 }
@@ -243,21 +243,21 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .contact{
+/* Work */
+.work, .contact{
     color:#fff;
     background: #111;
 }
-.services .contact::before,
+.work .contact::before,
 .teams .contact::before{
     background: #fff;
 }
-.services .contact::after,
+.work .contact::after,
 .teams .contact::after{
     background: #111;
     content: "what i provide";
 }
-.services .serv-content .card{
+.work .work-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -266,30 +266,30 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.work .work-content .card:hover{
     background: #1F6521;
 }
-.services .serv-content .card .box{
+.work .work-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.work .work-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.work .work-content .card i{
     font-size: 50px;
     color: #1F6521;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.work .work-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.work .work-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* Skills */
 
 .skills .title::after{
     content: "what i know";
@@ -387,7 +387,7 @@ section .title::after{
     background: #1F6521!important;
 }
 
-/* contact section styling */
+/* Contact */
 .contact .title::after{
     content: "get in touch";
 }
@@ -484,7 +484,7 @@ section .title::after{
     background: none;
 }
 
-/* footer section styling */
+/* Footer */
 footer{
     background: #fff;
     padding: 15px 23px;
@@ -500,7 +500,7 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
+/* Responsive Media Query */
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
@@ -570,7 +570,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .work .work-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -591,7 +591,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .work .work-content .card{
         width: 100%;
     }
 }
